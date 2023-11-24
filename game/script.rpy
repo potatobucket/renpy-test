@@ -15,11 +15,11 @@ label start:
 
     # These display lines of dialogue.
 
-    whitney "I'm so glad you could make it!"
+    whitney.chr "I'm so glad you could make it!"
 
     show whitney neutral at middlish
 
-    whitney "Oh, it's you." with hpunch
+    whitney.chr "Oh, it's you." with hpunch
 
     jump branching_path
 
@@ -27,7 +27,7 @@ label start:
 
 label branching_path:
     if hasMetWhitney == False:
-        whitney "Would you at least like to go outside?"
+        whitney.chr "Would you at least like to go outside?"
 
         menu:
             "Sure!":
@@ -40,14 +40,14 @@ label branching_path:
 
     else:
         show whitney neutral at middlish with move
-        whitney "Have you changed your mind about going outside?"
+        whitney.chr "Have you changed your mind about going outside?"
 
         menu:
             "I guess.":
                 jump go_outside
 
             "Still no.":
-                whitney "Well, I guess there's no helping you, then."
+                whitney.chr "Well, I guess there's no helping you, then."
                 jump bad_ending
 
     # This ends the game.
@@ -59,31 +59,31 @@ label go_outside:
     scene bg outside
     show whitney smile at middlish with dissolve
 
-    whitney "Well, at least we got to go outside."
+    whitney.chr "Well, at least we got to go outside."
 
     show potato_bucket at middlish with dissolve
 
-    potato "Congratulations on achieving the golden ending!"
+    potato.chr "Congratulations on achieving the golden ending!"
 
     show whitney neutral at rightish with move
 
-    whitney "Hey!"
+    whitney.chr "Hey!"
 
-    potato "We hope you've enjoyed out little pageant!"
+    potato.chr "We hope you've enjoyed out little pageant!"
 
     show whitney neutral at leftish with move
 
-    whitney "That was very rude!"
+    whitney.chr "That was very rude!"
 
     return
 
 label no_go_outside:
 
     show whitney neutral at leftish with move
-    whitney "Boo! Boo this man!"
+    whitney.chr "Boo! Boo this man!"
 
     show whitney neutral at rightish with move
-    whitney "Boooooo!"
+    whitney.chr "Boooooo!"
 
     menu:
         "Give in to peer pressure":
@@ -98,7 +98,7 @@ label bad_ending:
 
     scene bg black
 
-    whitney """
+    whitney.chr """
     I'm sorry it had to come to this.
 
     I really wanted to go outside.
@@ -115,7 +115,7 @@ label bad_ending:
 
     "That'll learn ya!"
 
-    badEnding """
+    badEnding.chr """
     And so you died the way you lived: being lasered down by the eyes of Whitney.
 
     At least you can take the smallest bit of comfort in knowing that it was always going to end this way.

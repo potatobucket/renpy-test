@@ -1,6 +1,12 @@
-define whitney = Character("Whitney")
-define potato = Character("Potato")
-define badEnding = Character(None, kind = nvl)
+init python:
+    class Guy:
+        def __init__(self, name = "Jim", colorHex = "5500FF", kindMode = adv):
+            self.chr = Character(name, color = colorHex, kind = kindMode)
+            self.hasMet = False
+
+define whitney = Guy(name = "Whitney")
+define potato = Guy(name = "Potato", colorHex = "978351")
+define badEnding = Guy(name = None, kindMode = nvl)
 
 transform middlish:
     xalign 0.5
