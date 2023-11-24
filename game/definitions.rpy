@@ -1,5 +1,8 @@
 init python:
     class Guy:
+        """
+        A class to initialize characters. name and colorHex (000000 - FFFFFF) are strings, kindMode is either adv or nvl
+        """
         def __init__(self, name = "Jim", colorHex = "5500FF", kindMode = adv):
             self.chr = Character(name, color = colorHex, kind = kindMode)
             self.hasMet = False
