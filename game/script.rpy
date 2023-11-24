@@ -2,8 +2,6 @@
 
 # The game starts here.
 
-define hasMetWhitney = False
-
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -26,16 +24,16 @@ label start:
     return
 
 label branching_path:
-    if hasMetWhitney == False:
+    if whitney.hasMet == False:
         whitney.chr "Would you at least like to go outside?"
 
         menu:
             "Sure!":
-                $ hasMetWhitney = True
+                $ whitney.hasMet = True
                 jump go_outside
 
             "Nah.":
-                $ hasMetWhitney = True
+                $ whitney.hasMet = True
                 jump no_go_outside
 
     else:
