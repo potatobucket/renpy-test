@@ -1,0 +1,9 @@
+
+*.rpyc
+*.save
+*.rpyb
+game/cache/shaders.txt
+game/saves/navigation.json
+game/saves/persistent
+game/tl/None/common.rpymc
+game/tl/None/common.rpymc
