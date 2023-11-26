@@ -397,11 +397,11 @@ style main_menu_vbox:
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
-# style main_menu_title:
-#     properties gui.text_properties("title")
+style main_menu_title:
+    properties gui.text_properties("title")
 
-# style main_menu_version:
-#     properties gui.text_properties("version")
+style main_menu_version:
+    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################

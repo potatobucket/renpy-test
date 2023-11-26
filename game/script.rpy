@@ -17,7 +17,7 @@ label start:
 
     show whitney neutral at middlish
 
-    whitney.chr "Oh, it's you." with hpunch
+    whitney.chr "Oh, it's {glitch=25.0}you{/glitch}." with hpunch
 
     jump branching_path
 
