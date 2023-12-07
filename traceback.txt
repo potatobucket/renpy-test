@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/definitions.rpy", line 10, in script
+    init python:
+  File "game/definitions.rpy", line 11, in <module>
+    from python_classes import whitneyName
+ImportError: cannot import name 'whitneyName' from 'python_classes' (C:\Users\potat\Desktop\Python Projects\Ren'Py Projects\renpy-test\game/python_classes.py)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/definitions.rpy", line 10, in script
+    init python:
+  File "C:\Users\potat\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\potat\Desktop\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/definitions.rpy", line 11, in <module>
+    from python_classes import whitneyName
+ImportError: cannot import name 'whitneyName' from 'python_classes' (C:\Users\potat\Desktop\Python Projects\Ren'Py Projects\renpy-test\game/python_classes.py)
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+TEST 1.0
+Thu Dec  7 14:25:10 2023

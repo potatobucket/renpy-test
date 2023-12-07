@@ -7,7 +7,10 @@ init python:
             self.chr = Character(name, color = colorHex, kind = kindMode)
             self.hasMet = False
 
-define whitney = Guy(name = "Whitney")
+init python:
+    from python_test import whitneyName
+
+define whitney = Guy(name = whitneyName)
 define potato = Guy(name = "Potato", colorHex = "978351")
 define badEnding = Guy(name = None, kindMode = nvl)
 
